@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { formatRating } from '@bg-hoard/store/util-formatters';
-import { Game } from '@bg-hoard/api/util-interface';
+import { Game } from '@bg-hoard/util-interface';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 

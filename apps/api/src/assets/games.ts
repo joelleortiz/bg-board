@@ -1,4 +1,4 @@
-import { Game } from '@bg-hoard/api/util-interface';
+import { Game } from '@bg-hoard/util-interface';
 
 export const games: Game[] = [
   {

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { games } from '../assets/games';
 
-import { Game } from '@bg-hoard/api/util-interface';
+import { Game } from '@bg-hoard/util-interface';
 
 @Injectable()
 export class AppService {

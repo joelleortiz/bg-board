@@ -16,7 +16,9 @@
     },
     "store-e2e": {
       "tags": [],
-      "implicitDependencies": ["store"]
+      "implicitDependencies": [
+        "store"
+      ]
     },
     "store-ui-shared": {
       "tags": []
@@ -30,7 +32,7 @@
     "api": {
       "tags": []
     },
-    "api-util-interface": {
+    "util-interface": {
       "tags": []
     }
   }

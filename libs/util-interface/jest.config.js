@@ -1,9 +1,9 @@
 module.exports = {
-  name: 'api-util-interface',
-  preset: '../../../jest.config.js',
+  name: 'util-interface',
+  preset: '../../jest.config.js',
   transform: {
     '^.+\\.[tj]sx?$': 'ts-jest'
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'html'],
-  coverageDirectory: '../../../coverage/libs/api/util-interface'
+  coverageDirectory: '../../coverage/libs/util-interface'
 };

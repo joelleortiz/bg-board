@@ -15,7 +15,7 @@
       "@bg-hoard/store/feature-game-detail": [
         "libs/store/feature-game-detail/src/index.ts"
       ],
-      "@bg-hoard/api/util-interface": [
+      "@bg-hoard/util-interface": [
         "libs/api/util-interface/src/index.ts"
       ]
     }
