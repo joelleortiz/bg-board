@@ -155,6 +155,38 @@
           "style": "scss"
         }
       }
+    },
+    "store-util-formatters": {
+      "projectType": "library",
+      "root": "libs/store/util-formatters",
+      "sourceRoot": "libs/store/util-formatters/src",
+      "prefix": "bg-hoard",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/store/util-formatters/tsconfig.lib.json",
+              "libs/store/util-formatters/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/store/util-formatters/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/store/util-formatters/jest.config.js",
+            "tsConfig": "libs/store/util-formatters/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/store/util-formatters/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
