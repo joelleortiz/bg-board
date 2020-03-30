@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -24,7 +25,8 @@ import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
       { initialNavigation: 'enabled' }
     ),
     MatCardModule,
-    StoreUiSharedModule
+    StoreUiSharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
