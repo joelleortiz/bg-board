@@ -7,9 +7,10 @@ import { RouterModule } from '@angular/router';
 
 import { MatCardModule } from '@angular/material/card';
 import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
+import { FormatRatingPipe } from '@bg-hoard/store/util-formatters';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, FormatRatingPipe],
   imports: [
     BrowserModule,
     RouterModule.forRoot(

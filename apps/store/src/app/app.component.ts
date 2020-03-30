@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-
-import { formatRating } from '@bg-hoard/store/util-formatters';
-import { Game } from '@bg-hoard/util-interface';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+
+import { Game } from '@bg-hoard/util-interface';
 
 @Component({
   selector: 'bg-hoard-root',
@@ -14,11 +12,5 @@ export class AppComponent {
   constructor(private httpClient: HttpClient) {}
 
   title = 'Board Game Hoard';
-  games = this.httpClient.get<Game[]>('/api/games').pipe(
-    map(games =>
-      games.map(game => {
-        return { ...game, rating: formatRating((game as any).rating) };
-      })
-    )
-  );
+  games = this.httpClient.get<Game[]>('/api/games');
 }
