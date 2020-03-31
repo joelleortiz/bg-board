@@ -23,6 +23,6 @@ Run `ng e2e store` to execute the end-to-end tests via [Cypress](https://www.cyp
 
 Run `nx affected:store` to execute the end-to-end tests affected by a change.
 
-### View the dependency graph
+## View the dependency graph
 
 Run `nx dep-graph` to view the application dependency graph
